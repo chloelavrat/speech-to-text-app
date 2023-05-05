@@ -1,0 +1,16 @@
+[theme]
+base = 'light'
+primaryColor = '#000000'
+
+[server]
+baseUrlPath = 'my-app'
+port = 1111
+enableCORS=false
+fileWatcherType = "none"
+maxUploadSize = 1024
+maxMessageSize = 1024
+
+[browser]
+serverAddress = "localhost"
+gatherUsageStats = false
+
