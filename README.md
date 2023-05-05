@@ -1,6 +1,8 @@
 ![](./assets/images/banner.png)
 
-Speech to Text App is a [Streamlit](https://streamlit.io/) application that allows users to transcribe speech to text from either an uploaded audio file or a YouTube video. The app uses the [whisper](https://github.com/openai/whisper) speech-to-text library developed by OpenAI.
+Speech to Text App is a [Streamlit](https://streamlit.io/) application that allows users to transcribe speech to text from either an uploaded audio file or a YouTube video. The app uses the [whisper](https://github.com/openai/whisper) speech-to-text library developed by OpenAI. 
+
+<center><a style="color: black;" href="https://github.com/azerty-labs/speech-to-text-app/blob/main/doc/capture.png" target="_blank"><bold>Click here to see the app</bold></a></center>
 
 ## Usage
 
