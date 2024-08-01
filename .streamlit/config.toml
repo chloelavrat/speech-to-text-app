@@ -3,8 +3,6 @@ base = 'light'
 primaryColor = '#000000'
 
 [server]
-baseUrlPath = 'whisper'
-port = 1111
 enableCORS=false
 fileWatcherType = "none"
 maxUploadSize = 1024
