@@ -1,40 +1,78 @@
-![](./assets/images/banner.png)
 
-Speech to Text App is a [Streamlit](https://streamlit.io/) application that allows users to transcribe speech to text from either an uploaded audio file or a YouTube video. The app uses the [whisper](https://github.com/openai/whisper) speech-to-text library developed by OpenAI. 
+<div align="center">
+  <img src="./assets/README-banner.png" alt="Banner" style="border-radius: 17px; width: 100%; max-width: 800px; height: auto;">
+</div>
 
-<center><a style="color: black;" href="https://github.com/azerty-labs/speech-to-text-app/blob/main/doc/capture.png" target="_blank"><bold>Click here to see the app</bold></a></center>
+<h3 align="center">
+  <b><a href="azerty-labs.com">Online App</a></b>
+  •
+  <b><a href="#usage">Usage</a></b>
+  •
+  <b><a href="https://github.com/azerty-labs/speech-to-text-app/blob/main/doc/capture.png">App Screenshot</a></b>
+</h3>
 
-## Usage
+<div align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
+  </a>
+  <img src="https://img.shields.io/badge/python-3.7+-blue.svg" alt="Python Versions">
+</div>
+</br>
 
-To use the app, simply go to the [Speech to Text App website](azerty-labs.com) and follow the instructions on the page. You can choose to upload an audio file or enter a YouTube link to transcribe. The app will process the audio and display the transcribed text in a text area.
+<p align="center">
+  The <b>Speech to Text App</b> is a Streamlit application that allows users to transcribe speech to text from either an uploaded audio file or a YouTube video. The app leverages OpenAI's <a href="https://github.com/openai/whisper">Whisper</a> speech-to-text library to provide accurate and efficient transcriptions.
+</p>
 
-## Installation
+## Features
 
-To install the app locally, you will need to have Python 3.7 or higher installed on your machine. Clone the repository from GitHub:
+The Speech to Text App offers the following features:
 
-```
-git clone https://github.com/azerty-labs/speech-to-text-app.git
-```
+- **Transcribe Audio Files:** Upload an audio file (e.g., MP3, WAV) to transcribe the speech into text.
+- **Transcribe YouTube Videos:** Enter a YouTube link to automatically extract and transcribe the audio content.
 
-Then, navigate to the project directory and install the required packages using pip:
+## How it Works
 
-```
-cd speech-to-text-app
-python3.8 -m venv venv
-pip install --upgrade pip
-pip install -r requirements.txt
-```
+The app uses OpenAI's Whisper library to perform speech-to-text transcription. Whisper is a general-purpose speech recognition model trained on a large dataset of diverse audio. It can handle various languages and accents, making it a versatile tool for transcribing different types of speech.
 
-To run the app locally, use the following command:
+When a user uploads an audio file or provides a YouTube link, the app processes the audio through Whisper, which converts the spoken content into written text. This text is then displayed in the app's interface, allowing users to copy or save it as needed.
 
-```
-streamlit run app.py
-```
+## Run app locally
+If you want to run the **speech-to-text-app** streamlit app locally. Multiple solution are possible :
+
+1. **Run the app directly in a virtual environnement**
+    
+    clone repository:
+    ```
+    git clone https://github.com/chloelavrat/speech-to-text-app.git
+    cd speech-to-text-app
+    ```
+    Create, activate and install your environnement:
+    ```
+    python -m venv .venv
+    source .venv/bin/activate
+    pip install -r requirements.txt
+    ```
+    Run the app using streamlit:
+    ```
+    streamlit run streamlit_app.py
+    ```
+
+2. **Run the app using docker**
+
+    Build the `speech-to-text-app` docker container:
+    ```
+    docker build -t speech-to-text-app .
+    ````
+    Run the container at a specified port (here 8501) 
+    ```
+    docker run -p 8501:8501 speech-to-text-app
+    ```
+    Go to your web browser and access [localhost:8501](http://localhost:8501)
 
 ## Contributing
 
-Contributions to the project are welcome! If you find any issues or bugs, please open an issue on the GitHub repository. If you would like to contribute code, please fork the repository, make your changes, and submit a pull request.
+This is an open-source project, and contributions are always welcome. If you would like to contribute to the project, you can do so by submitting a pull request or by creating an issue on the project's GitHub page.
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
